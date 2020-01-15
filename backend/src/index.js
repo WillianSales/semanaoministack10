@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require('./routes');
 
 // app. get, post, put, delete
@@ -15,6 +16,7 @@ mongoose.connect('mongodb+srv://m001-student:m001-mongodb-basics@willian-m001-ep
     useUnifiedTopology: true,
 });
 
+app.use(cors());
 app.use(express.json());
 app.use(routes);
 
