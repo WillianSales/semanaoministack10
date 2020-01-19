@@ -20,7 +20,7 @@ module.exports = {
                         coordinates: [longitude, latitude],
                     },
                     // Distancia maxima em metros
-                    $maxDistance: 10000,
+                    $maxDistance: 100000,
                 },
             },
         });
